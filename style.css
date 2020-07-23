@@ -84,10 +84,6 @@ li{
     padding-right: 0;
 }
 
-li:hover {
-  background: #ddd;
-}
-
 .removeBtn, .checkBtn {
 	display: inline-block;
 	text-align: center;
@@ -122,3 +118,10 @@ li:hover {
         width: 100%;
     }
 }
+
+@media only screen and (min-width: 800px){
+   li:hover {
+  background: #ddd;
+    }
+}
+
