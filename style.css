@@ -2,7 +2,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
-select,   textarea,   input[type="text"] { font-size: 16px; }
+select,   textarea,   input[type="text"], select:focus, { font-size: 16px; }
+input, select { font-size: 100%; }
 
 h1, p{
 	text-align: center;
