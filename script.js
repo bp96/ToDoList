@@ -1,7 +1,9 @@
+// Initialise variables
 var button = document.getElementById("enter");
 var input = document.getElementById("userInput");
 var ul = document.querySelector("ul");
 
+// Define functions
 function inputLength() {
 	return input.value.length;
 }
@@ -39,10 +41,6 @@ function addListAfterKeypress(event) {
 	}
 }
 
-button.addEventListener("click", addListAfterClick);
-
-input.addEventListener("keypress", addListAfterKeypress);
-
 function strikeItems(li){
 	li.addEventListener("click", function(){
 		this.classList.toggle("done")})}
@@ -53,3 +51,8 @@ function deleteBtns(dltBtn){
     var li = this.parentNode
     li.remove()
   })}
+
+// Activate event listeners
+button.addEventListener("click", addListAfterClick);
+input.addEventListener("keypress", addListAfterKeypress);
+

@@ -1,3 +1,4 @@
+/* Set font for webpage*/
 *{
     font-family: 'Roboto', sans-serif;
 }
@@ -5,7 +6,8 @@
 select,   textarea,   input[type="text"], select:focus, { font-size: 16px; }
 input, select { font-size: 100%; }
 
-h1, p{
+/* Align centre text*/
+h1, p, .list-div{
 	text-align: center;
 }
 
@@ -18,6 +20,7 @@ h1{
 	text-align: center;
 }
 
+/* Define CSS for when a list item is marked as done*/
 .done, .done:hover {
   text-decoration: line-through;
   background-color: #d9d9d9;
@@ -28,6 +31,7 @@ h1{
 	opacity: 0.7;
 }
 
+/* Define size, colour and shape of input, list, button and enter elements*/
 input, li{
     border: none;
     padding: 10px;
@@ -37,9 +41,11 @@ input, li{
     border:1px solid #eaeaea;
     outline:none;
 }
+
 input:hover{
     border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9;
 }
+
 input:focus{
     border-color:#4d90fe;
 }
@@ -65,10 +71,7 @@ button {
     color: #222;
 }
 
-.list-div{
-	text-align: center;
-}
-
+/* Styles for list elements */
 ul{
 	text-align: center;
     padding: 0;
@@ -84,6 +87,7 @@ li{
     padding-right: 0;
 }
 
+/*Styles for remove and check buttons*/
 .removeBtn, .checkBtn {
 	display: inline-block;
 	text-align: center;
@@ -101,6 +105,7 @@ li{
 	float: left;
 }
 
+/* Create media queries for small screens*/
 @media only screen and (max-width: 800px){
     input{
         width: 70%
@@ -119,6 +124,7 @@ li{
     }
 }
 
+/* Hover effect on list items but in desktop mode only*/
 @media only screen and (min-width: 800px){
    li:hover {
   background: #ddd;
